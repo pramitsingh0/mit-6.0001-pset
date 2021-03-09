@@ -1,15 +1,12 @@
 s = input('Enter a string: ')
-count = 0
-maxcount = 0
-result = 0
-for char in range(len(s)-1):
-    if s[char] < s[char + 1]:
-        count += 1
-        if count > maxcount:
-            maxcount = count
-            result = char+1
+longest = ''
+current = ''
+
+for i in range(len(s)):
+    if s[i] >= s[i-1]:
+        current += s[i]
     else:
-        count = 0
-    
-start = maxcount - char
-print(s[start:maxcount])
+        current = s[i]
+    if len(current) >=len(longest):
+        longest = current
+print(longest)
