@@ -3,9 +3,8 @@
 # The 6.0001 Word Game
 # Created by: Kevin Luu <luuk> and Jenna Wiens <jwiens>
 #
-# Name          : <your name>
-# Collaborators : <your collaborators>
-# Time spent    : <total time>
+# Name          : Pramit Singh
+# Collaborators : None
 
 import math
 import random
@@ -124,7 +123,7 @@ def get_word_score(word, n):
             return score
 
     return first_component(word) * second_component(word, n) 
-
+ 
 
 #
 # Make sure you understand how this function works and what it does!
