@@ -123,9 +123,9 @@ def get_word_score(word, n):
         else:
             return score
 
-    return first_component(word) * second_component(word, n) \
- \
- \
+    return first_component(word) * second_component(word, n) 
+
+
 #
 # Make sure you understand how this function works and what it does!
 #
